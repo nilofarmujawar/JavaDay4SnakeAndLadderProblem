@@ -63,11 +63,12 @@ class gamePlayer {
                     System.out.println("you got snake of " + rollDie);
                     
                     System.out.println(playerName + "'s current position is : " + currentPosition);
+                    
                 }
                 
                 attempts++;
-                
             }
+            
             endGame = currentPosition;
         }
 
@@ -79,6 +80,12 @@ public class Snake_And_Ladder {
     public static void main(String[] args) {
     	
         System.out.println("welcome to snake & ladder game");
+        
+        gamePlayer play1 = new bridgelabz.program.gamePlayer();
+        
+        play1.gameStart("Player 1");
+        
+        System.out.println("Congratulation Player1 completed the game in " + play1.attempts + " attempts.");
         
     }
 }

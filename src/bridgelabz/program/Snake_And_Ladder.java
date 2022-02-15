@@ -65,10 +65,8 @@ class gamePlayer {
                     System.out.println(playerName + "'s current position is : " + currentPosition);
                     
                 }
-                
                 attempts++;
             }
-            
             endGame = currentPosition;
         }
 
@@ -86,6 +84,7 @@ public class Snake_And_Ladder {
         play1.gameStart("Player 1");
         
         System.out.println("Congratulation Player1 completed the game in " + play1.attempts + " attempts.");
+
         
     }
 }
